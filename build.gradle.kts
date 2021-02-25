@@ -15,13 +15,14 @@ val quarkusPlatformVersion: String by project
 
 dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
+    implementation("io.quarkus:quarkus-kotlin")
+    implementation("io.smallrye.reactive:mutiny-kotlin")
     implementation("io.quarkus:quarkus-minikube")
     implementation("io.quarkus:quarkus-smallrye-reactive-messaging-amqp")
     implementation("io.quarkus:quarkus-hibernate-validator")
-    implementation("io.quarkus:quarkus-resteasy-jsonb")
+//    implementation("io.quarkus:quarkus-resteasy-jsonb")
     implementation("io.quarkus:quarkus-resteasy-reactive")
     implementation("io.quarkus:quarkus-logging-gelf")
-    implementation("io.quarkus:quarkus-kotlin")
     implementation("io.quarkus:quarkus-reactive-pg-client")
     implementation("io.quarkus:quarkus-smallrye-health")
     implementation("io.quarkus:quarkus-logging-sentry")

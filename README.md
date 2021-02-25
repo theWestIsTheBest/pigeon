@@ -66,3 +66,10 @@ If you want to learn more about building native executables, please consult http
 Rest is easy peasy & reactive with this Hello World RESTEasy Reactive resource.
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
+
+### pointers to documentation
+[quarkus and kotlin](https://quarkus.io/guides/kotlin)
+[mutiny and kotlin](https://smallrye.io/smallrye-mutiny/guides/kotlin)
+new way of reacting routes: [RESTEasy](https://quarkus.io/blog/resteasy-reactive/)
+
