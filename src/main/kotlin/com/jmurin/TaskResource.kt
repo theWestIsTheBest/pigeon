@@ -34,18 +34,12 @@ class TaskResource {
 
         // TODO: start a long running task in the background that once finished will produce a message
 
-//        val messageText: String = String.format("%s / %d", customerId, timeComplexity)
         val messageText: String = "TEST MESSAGE TEXT"
 
         val metadata: OutgoingAmqpMetadata = OutgoingAmqpMetadata.builder()
-            .withMessageAnnotations("customerId-msg-annot", customerId)
-            .withApplicationProperty("customerId-app-prop", customerId)
-            .withDurable(true)
-            .withCorrelationId(customerId)
-//            .withCreationTime(Instant.now().epochSecond * 1000)
+
             .withAddress("anycast://my-custom-address")
-            .withSubject("whatIsASubj")
-//            .withExpiryTime(Instant.now().epochSecond * 1000 + 1_200_000)
+
             .build()
 
         val message: Message<String> = Message.of(messageText,

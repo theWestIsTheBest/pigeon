@@ -10,7 +10,7 @@ This project uses Quarkus and Smallrye Reactive Messaging Library with the AMQP 
 
 `docker run --rm --name artemis -p 8161:8161 -p 5672:5672 --env ARTEMIS_USERNAME=adm --env ARTEMIS_PASSWORD=guest artemis:v1`
 
-## run the microservice in dev mode
+### run the microservice in dev mode
 
 ```shell script
 ./gradlew quarkusDev
@@ -19,3 +19,7 @@ This project uses Quarkus and Smallrye Reactive Messaging Library with the AMQP 
 ### use the endpoint to send a message to the broker
 
 `curl http://localhost:8080/tasks -d 'customerId=5466AEYRHD' -d 'timeComplexity=10'`
+
+# open ActiveMQ Management Console to see the message
+
+point your browser to `http://localhost:8161/console/auth/login`
