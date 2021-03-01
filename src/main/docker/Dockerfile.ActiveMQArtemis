@@ -1,0 +1,3 @@
+FROM vromero/activemq-artemis:2.16.0-alpine
+
+COPY --chown=artemis:artemis src/main/docker/resources/broker.xml /var/lib/artemis/etc/broker.xml

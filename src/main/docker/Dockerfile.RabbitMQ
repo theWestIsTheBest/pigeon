@@ -1,0 +1,2 @@
+FROM rabbitmq:3.8.12-management-alpine
+RUN rabbitmq-plugins enable --offline rabbitmq_federation_management rabbitmq_management_agent rabbitmq_amqp1_0 rabbitmq_web_dispatch rabbitmq_prometheus
