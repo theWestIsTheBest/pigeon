@@ -20,6 +20,6 @@ This project uses Quarkus and Smallrye Reactive Messaging Library with the AMQP 
 
 `curl http://localhost:8080/tasks -d 'customerId=5466AEYRHD' -d 'timeComplexity=10'`
 
-# open ActiveMQ Management Console to see the message
+### open ActiveMQ Management Console to see the message
 
 point your browser to `http://localhost:8161/console/auth/login`
